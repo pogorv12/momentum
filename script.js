@@ -29,6 +29,7 @@ function showTime() {
   time.innerHTML = `${hour}<span>:</span>${addZero(min)}<span>:</span>${addZero(sec)}`;
   date.innerHTML = today.toDateString();
   if (!min && !sec) {
+    getWeather();
     setBgGreet();
   }
   setTimeout(showTime, 1000);
