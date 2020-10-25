@@ -113,7 +113,7 @@ h2.quote {
 }
 
 body::after{
-  position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+  width: 0; height: 0; overflow: hidden; display: block;
   content:
     url(assets/images/day/01.jpg) 
     url(assets/images/day/02.jpg)
