@@ -76,9 +76,7 @@ function setBgGreet(forceSet = -1) {
 
 // Get Name
 function getName() {
-  if (localStorage.getItem('name') === null) {
-    name.textContent = '[Enter Name]';
-  } else {
+  if (localStorage.getItem('name') !== null) {
     name.textContent = localStorage.getItem('name');
   }
 }
@@ -169,7 +167,7 @@ async function getWeather(){
 
     wicon.style.display = 'block';
     wicon.src = 'http://openweathermap.org/img/wn/' + data.weather[0].icon + '@2x.png';
-    forecast.innerText = `Temp: ${data.main.temp}°C | Humidity: ${data.main.humidity}% | Pressure: ${data.main.pressure}hPa`;
+    forecast.innerHTML = `<span>&nbsp;Temp:&nbsp;${data.main.temp}°C&nbsp;</span> <span>&nbsp;Humidity:&nbsp;${data.main.humidity}%&nbsp;</span> <span>&nbsp;Pressure:&nbsp;${data.main.pressure}hPa&nbsp;</span>`;
   });
 }
 
