@@ -6,18 +6,34 @@
 
 body {
   font-family: 'Quicksand', sans-serif;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   height: 100vh;
   background-size: cover;
-  color: #000000;
+  color: #FFFFFFAA;
+  text-shadow: 0px 0px 10px #00000055;
+  transition: background-image 1s ease-in-out;
 }
 
 .time {
   font-size: 8rem;
+  display: grid;
+  grid-template-columns: 10rem 2rem 10rem 2rem 10rem;
+}
+
+.input {
+  outline: none;
+}
+.input:empty:before {
+  content: attr(placeholder);
+}
+
+.input:focus:before {
+  content: '';
 }
 
 h1 {
@@ -26,11 +42,41 @@ h1 {
 
 h2 {
   margin-bottom: 0.5rem;
-  opacity: 0.8;
+}
+
+h2.quote {
+  margin-top: 1.5rem;
+  max-width: 75%;
+}
+
+.controls {
+  margin-top: 30px;
+}
+
+.control {
+  margin-top: 30px;
+}
+
+.control:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 @media (max-width: 700px) {
   .time {
     font-size: 6rem;
   }
+}
+
+@media (max-width: 400px) {
+  .time {
+    font-size: 4rem;
+  }
+}
+
+.forecast-container, .date-container, .other-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }

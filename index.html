@@ -8,13 +8,29 @@
   <title>momentum</title>
 </head>
 <body>
-  <time class="time"></time>
-  <h1>
-    <span class="greeting"></span>
-    <span class="name" contenteditable="true"></span>
-  </h1>
-  <h2>What Is Your Focus For Today?</h2>
-  <h2 class="focus" contenteditable="true"></h2>
+  <div class="forecast-container">
+    <h2 class="input city" contenteditable="true" placeholder = 'Somewhere'></h2>
+    <h2 class="forecast"></h2>
+    <img class="wicon" src="">
+  </div>
+  <div class="date-container">
+    <h2>
+      <span class="date"></span>
+    </h2>
+    <time class="time"></time>  
+  </div>
+  <div class="other-container">
+    <h1>
+      <span class="greeting"></span>
+      <span class="input name" contenteditable="true" placeholder="My Hero"></span>
+    </h1>
+    <h2>What Is Your Focus For Today?</h2>
+    <h2 class="input focus" contenteditable="true" placeholder="Make a promise!"></h2>
+    <h2 class="quote"></h2>
+  </div>
+  <div class="controls">
+    <span class="control swipeBg">Next background</span> | <span class="control newQuote">Next qoute</span> | <span class="control weatherUpdate">Weather update</span>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
