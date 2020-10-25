@@ -20,7 +20,7 @@ body {
 }
 
 .wicon {
-  background-color: #ffffff55;
+  background-color: #ffffff22;
   border-radius: 10%;
 }
 
@@ -50,12 +50,14 @@ h2 {
 }
 
 h2.quote {
-  margin-top: 1.5rem;
+  margin-top: 1.2rem;
   max-width: 75%;
 }
 
 .controls {
-  margin-top: 30px;
+  position: fixed;
+  bottom: 10px;
+
 }
 
 .control {
@@ -95,7 +97,7 @@ h2.quote {
   }
 
   .time {
-    font-size: 4rem;
+    font-size: 3rem;
     grid-template-columns: 4rem 2rem 4rem 2rem 4rem;
   }
 
@@ -106,6 +108,7 @@ h2.quote {
 }
 
 .forecast-container, .date-container, .other-container {
+
   display: flex;
   justify-content: center;
   flex-direction: column;
